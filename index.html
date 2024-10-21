@@ -1,72 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="moksedul Islam," />
+    <meta name="keywords" content="portfolio, html, moksedul Islam," />
+    <meta name="description" content="Moksedul Islam is a software developer....," />
+    
     <title>My Portfolio</title>
+    
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <!--section: navbar--> 
- <nav>
-    <ul>
-        <li><a href="index.html" target="self" title="visit home page">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">My Skills</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-    </ul>   
-</nav>
+    <main>
+        <!--section: navbar--> 
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="self" title="visit home page">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>   
+    </nav>    
+</header>
 
     <!--section: intro--> 
- <header id="intro">
+ <section id="intro">
+   <div class="cord">
     <h1>Moksedul Islam</h1>
-    <p><em>Web developer and student of computer science</em></p>   
+    <p><em>Web de veloper and student of computer science</em></p>   
+    <a href="https://www.bing.com/videos/riverview/relatedvideo?pglt=41&q=arif+bin+habib+waz&cvid=15115cba45a44dd18fb74ac8fc24b14c&gs_lcrp=EgRlZGdlKgYIAxAAGEAyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQLhhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQg4NjIyajBqMagCCLACAQ&PC=U531&ru=%2fsearch%3fpglt%3d41%26q%3darif%2bbin%2bhabib%2bwaz%26cvid%3d15115cba45a44dd18fb74ac8fc24b14c%26gs_lcrp%3dEgRlZGdlKgYIAxAAGEAyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQLhhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQg4NjIyajBqMagCCLACAQ%26FORM%3dANNTA1%26PC%3dU531&mmscn=vwrc&mid=B29572DD272ADD7A6089B29572DD272ADD7A6089&FORM=WRVORC">
     <img src="./images/moksedul.jpg" alt="Moksedul Islam" height="150">
-    <hr /> 
-</header>
+    </a>
+   </div>
+</section>
   
     <!--section: about me-->
-    <section id="about">
+<section id="about" class="cord">
         <h2>About me</h2>
         <p><strong>Experience:</strong> Biginner</p>
         <p><strong>Educatin:</strong> Honours in computer, web and cloud computing</p>
-        <table border="1" cellpadding="5" cellspacing="0">
-            <thead>
-                <tr>
-                    <td>Technology</td>
-                    <td>Proficiency</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Technology1</td>
-                    <td>Proficiency1</td>
-                </tr>
-                <tr>
-                    <td>Technology2</td>
-                    <td>Proficiency2</td>
-                </tr>
-                <tr>
-                    <td>Technology3</td>
-                    <td>Proficiency3</td>
-                </tr>
-            </tbody>
-        </table>     
-    </section> 
+</section>
 
     <!--section: Skills--> 
-    <section id="skills">
+<section id="skills" class="cord">
       <h2>Skills</h2>
-      <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-      </ol>
-         
-    </section>
+      <table>
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Proficiency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTMl</td>
+                <td>Expert</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td rowspan="2">Biginner</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+    <h3>Skill Progress</h3>
+    
+    <div>
+       <label for="htmlProgress">HTML:</label>
+       <progress id="htmlProgress" value="90" max="100">90%</progress>
+    </div>
+    <div>
+      <label for="CSSProgress">CSS:</label>
+      <progress id="CSSProgress" value="80" max="100">80%</progress>
+    </div>
+    <div>
+      <label for="JavaScriptProgress">JavaScript:</label>
+      <progress id="JavaScriptProgress" value="50" max="100">50%</progress>
+    </div>
+    </div>
+
+    
+</section> 
     
     <!--section: Projects--> 
-    <section id="projects">
+<section id="projects" class="cord">
         <h2>Projects</h2>
         <ol>
         <li><a target="blank" href="https://github.com/Moksedul-islam/portfolio-html">Portfolio website</a>    
@@ -74,18 +107,83 @@
         <li>Blog website</li>
         <li>E-commerce website</li>
         </ol> 
-    </section>
+</section>
   
-    <!--section: Contacts-->
-     <section id="contact">
-        <h2>Contact Me</h2>
-     </section>
+<video width="320" height="220" controls>
+    <source src="./assets/video/Natural-village.mp4.mp4" type="video/mp4">
+    Your browser do not support this type of video.
+</video>
 
+    <!--section: Contacts-->
+<section id="contact" class="cord">
+        <h2>Contact Me</h2>
+        <form  action="https://formspree.io/f/mwpkkner"
+        method="POST">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="name">Name*: </label>
+                <input type="text" id="name" name="name" required />       
+          </div>
+          <div>
+            <label for="email">Email*: </label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="age">Age*: </label>
+            <input type="number" id="age" name="age" min="18" max="55" required />
+          </div>
+          </fieldset>
+          <div>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" pattern="https?://.+" />
+          </div>
+          <div>
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" />
+          </div>
+          <div>
+            <label for="subject">Subject:</label>
+            <select name="subject" id="subject">
+                <option value="inquiry">Inquiry</option>
+                <option value="feedbact">Feedbact</option>
+                <option value="job">Job Opportunity</option>
+            </select>
+        </div>
+        <div>
+            <label for="meassage">Meassage: </label>
+            <textarea name="meassage" id="meassage" cols="20" rows="10"></textarea>    
+        </div>
+          
+        <button type="submit">Submit</button>  
+        <button type="reset">Clear</button>
+        </form>  
+</section>
+
+    </main>
      <!--section: Footer-->
-    <footer>
-        <p>Copyring reserved by Moksedul2024</p>
+<footer>
+        <p>Copyring reserved by &copy; Moksedul2024</p>
+        <p>Developed with &hearts;</p>
         <a href="tel:01876242308">Call me</a>
         <a href="mailto:mmoksed135@gmail.com">Email me</a>
-    </footer> 
+       <div class="social-media">
+        <h3>Follow Me</h3>
+        <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook Page</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=9TDCoeDYl6g&list=PL3zQ1M-yGm2Ea4mt9Ro5tXo307AfqDbcU" target="_blank"><i class="fa-brands fa-youtube"></i>YouTube Channel</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin Profile</a>
+            </li>
+        </ul>
+       </div>
+       <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230319.47498633162!2d89.66067203249841!3d25.58025575457702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fd4d68f59bde91%3A0x7d341ddcc8cfec74!2sRowmari%20Upazila!5e0!3m2!1sen!2sbd!4v1729053536796!5m2!1sen!2sbd" title="home map" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div> 
+</footer> 
 </body>
 </html>
